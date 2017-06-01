@@ -1,24 +1,9 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails new my_people --api --database=postgresql --no-turbolinks -T --skip-bundle
+```
+```
+rails g model user first_name last_name dob:date
+```
+```
+rails g controller api/v1/users
+```
